@@ -7,13 +7,13 @@ Acest proiect reprezintă o reproiectare inovatoare a site-ului Hard Rock Cafe, 
 
 ## 🚀 Funcționalități
 
-- 🌐 **Homepage modern** - Oferă o prezentare clară a restaurantului și navigare rapidă.
-- 🍔 **Meniu interactiv** - Categorii dedicate pentru burgeri, deserturi, băuturi și specialități.
-- 🎶 **Evenimente & Concerte** - Pagini dinamice pentru afișarea concertelor viitoare și rezervări.
-- 🛒 **Magazin online** - Posibilitatea de a explora și achiziționa produse Hard Rock.
-- 📅 **Sistem de rezervări** - Formulare validate cu JavaScript și date gestionate prin Node.js.
-- 🏛 **Pagină despre istoria Hard Rock** - Un timeline interactiv cu evenimente importante.
-- ❌ **Pagină 404 personalizată** - Experiență de navigare fluidă chiar și în cazul unor erori.
+-  **Homepage modern** - Oferă o prezentare clară a restaurantului și navigare rapidă.
+-  **Meniu interactiv** - Categorii dedicate pentru burgeri, deserturi, băuturi și specialități.
+-  **Evenimente & Concerte** - Pagini dinamice pentru afișarea concertelor viitoare și rezervări.
+-  **Magazin online** - Posibilitatea de a explora și achiziționa produse Hard Rock.
+-  **Sistem de rezervări** - Formulare validate cu JavaScript și date gestionate prin Node.js.
+-  **Pagină despre istoria Hard Rock** - Un timeline interactiv cu evenimente importante.
+-  **Pagină 404 personalizată** - Experiență de navigare fluidă chiar și în cazul unor erori.
 
 ---
 
