@@ -1,0 +1,281 @@
+body {
+  --rosu: #cf4242;
+}
+/* STILIZARE FOOTER */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #000000;
+    margin-top: 20px;
+  }
+  .footer p{
+    color:rgb(228, 172, 29)
+  }
+
+/* SITE RESPONSIVE  */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .imagine_header img {
+        max-width: 100%;
+        height: auto; 
+      }
+    #text_img_header{
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      font-size: 80px;
+    }
+    .rightcolumn img{
+      max-width:90%;
+    }
+
+    .leftcolumn img{
+      max-width:90%;
+    }
+   
+  }
+  
+  @media screen and (min-width: 801px) {
+    .menu a {
+      float: left; 
+      width: auto; 
+    }
+    .imagine_header{
+        position:relative;
+        width: 100%;
+      }
+    
+      #text_img_header {
+        position: absolute;
+        top: 50%;
+        right: 15%; 
+        transform: translate(0, -50%);
+        color: rgb(0, 0, 0);
+        font-size: 50px;
+        background-color: rgba(209, 235, 248, 0.5);
+        padding: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .menu a {
+      float: none;
+      width: 100%;
+    }
+    .imagine_header img {
+        max-width: 100%;
+        height: auto; 
+    }
+    #text_img_header{
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      font-size: 90px;
+    }
+  }
+/* STILIZARE MENIU */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .menu li {
+    float: right;
+  }
+  .menu li a {
+    font-size: large;
+    float: right;
+    display: inline;
+    color: rgb(247, 245, 245);
+    text-align: center;
+    padding: 20px 21px;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    background-color: var(--rosu);
+  }
+
+  /* STILIZARE DROPDOWN MENIU */
+  .dropdown {
+    position:absolute;
+    display: inline-block;
+    z-index: 2;   
+  }
+  .dropbtn {
+    background-color: #333;
+    color: rgb(247, 244, 244);
+    padding: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+  }
+  .dropbtn:hover {
+    background-color: var(--rosu);}
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    text-align: center;
+    z-index: 3; 
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: rgb(247, 244, 244);
+}
+
+.dropdown-content a:hover {
+    background-color: var(--rosu);
+    width: 100%;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* STILIZARE IMAGINE HEADER */
+.imagine_header{
+    position:relative;
+    width: 100%;
+    z-index: 1; 
+  }
+
+  #text_img_header {
+    position: absolute;
+    top: 50%;
+    right: 15%; 
+    transform: translate(0, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    background-color: rgba(209, 235, 248, 0.5);
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1; 
+}
+
+/* STILIZARE TEXT HEADER */
+header h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    
+}
+header h4{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+header span{
+    color:#cf4242;
+}
+
+
+
+/* STILIZARE RESTU PAGINII */
+.container {
+    display: grid;
+    grid-template-columns: 45% auto 45%; /* Coloanele laterale sunt de 45%, iar linia verticală ocupă restul spațiului */
+    position: relative; 
+}
+
+.leftcolumn, .rightcolumn {
+    position: relative; /* Asigură poziționarea relativă pentru a poziționa corect linia verticală */
+}
+
+.leftcolumn {
+    grid-column: 1; /* Plasează coloana stângă pe prima poziție */
+}
+
+.leftcolumn img{
+    width:90%;
+    padding: 30px;
+}
+
+.rightcolumn {
+    grid-column: 3; /* Plasează coloana dreaptă pe ultima poziție */
+}
+
+.rightcolumn h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.rightcolumn p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:rgb(61, 8, 8);
+}
+
+.leftcolumn h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: center; 
+}
+
+.leftcolumn p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:rgb(61, 8, 8);
+    padding-bottom: 50px;
+}
+
+.linie_verticala {
+    border-left: 2px solid rgb(228, 172, 29);
+    height: 100%; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.an{
+    color:rgb(228, 172, 29);
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:100px;
+    text-align: center;
+}
+
+/* STILIZARE BUTON CSS+JV */
+#scrollTopBtn{
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #d6cdcd;
+  text-align: center;
+  position: sticky;
+  bottom:20px;
+  left: 1500px;
+  border-radius: 5px;
+  border-color: #d6cdcd;
+  color:white;
+  cursor:pointer;
+}
+
+#scrollTopBtn:hover{
+  background-color:#bbafaf ;
+}
+
+/* --------------------------STILIZARE PENTRU JS----------------- */
+.subliniat {
+  text-decoration: underline;
+}

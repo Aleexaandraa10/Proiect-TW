@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&hearts; Despre voi</title>
+    <link href="despre_voi.css" rel="stylesheet" type="text/css">
+   
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="despre_voi.html">Despre voi</a></li>
+            <li><a href="care-i_faza.html">Care-i faza</a></li>
+            <li><a href="magazin.html">Magazin</a></li>
+            <li><a href="concerte.html">Concerte și Evenimente</a></li>
+            <li class="dropdown">
+              <div class="dropbtn">Meniu</div>
+              <div class="dropdown-content">
+                  <a href="burgeri.html">Burgeri</a>
+                  <a href="specialitati.html">Specialități</a>
+                  <a href="salate.html">Salate</a>
+                  <a href="deserturi.html">Deserturi</a>
+                  <a href="bauturi.html">Băuturi</a>
+              </div>
+            </li>
+            <li style="float: right"><a href="acasa.html">Acasă</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="imagine_header">
+            <img src="despre_voi.jpg" alt="Imagine petrecere" height="804">
+            <div id="text_img_header">NU E DESPRE NOI, <br>E DESPRE VOI</div>
+        </div>
+    </header>
+    <div class="franciza">
+        <h1>DEZVOLTAREA FRANCIZEI</h1>
+        <h3>Hard Rock International menține peste 80% recunoașterea globală favorabilă a mărcii și are locații în peste 70 de țări, în aproape 250 de comunități. Hard Rock continuă să definească 
+            la nivel global ce poate fi o experiență de destinație de stil de viață.</h3>
+        <br><br>
+        <iframe width="1405" height="600" src="https://www.youtube.com/embed/wAsD5PfAs24" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br><br>
+    <div class="text">
+        <br><br>
+        <h2 id="mesaj">Am ajuns aici cu ajutorul vostru, dar misiunea noastră nu s-a terminat. Vrem să fim mai buni în fiecare zi.</h2>
+        <hr>
+
+        <h1>Părarea ta este importantă pentru noi!</h1>
+        <h1 id="intrebare">Tu ce crezi?</h1>
+        <h2>Povestește-ne despre ultima ta experiență</h2>
+        <br><br>
+        <h3>Lasă-ne o recenzie:</h3>
+        <textarea id="feedbackTextarea" rows="4" cols="50" placeholder="Introdu feedback-ul tău aici..."></textarea>
+        <br>
+        <button onclick="trimiteFeedback()">Trimite</button>
+        <p><i>Feedback-ul tău va rămâne pe pagina noastră!</i></p>
+        <ul id="listaFeedbackuri"></ul>
+    </div>
+
+    <div class="box">
+        <h1>FOLLOW US: @HARDROCKCAFE</h1>
+    </div>
+
+
+    <div class="container-box">
+        <a href="https://www.instagram.com/reel/C6ouHtjL8y3/">
+            <div class="image-container">
+                <img src="despre_voi1.jpg" alt="Imagine 1">
+                <span class="overlay-text">🎉 Congratulations to our ambassador Leo Messi! 
+                    <br>🌟 Setting a new milestone in his career: becoming the first player in the MLS to achieve 5 assists in a single match. ⚽👏
+                    <br><br>#LeoMessi #MLS #RecordBreaker #FootballLegend</span>
+            </div>
+         </a>
+        <a href="https://www.instagram.com/p/C6jaWw1NLLK/">
+            <div class="image-container">
+                <img src="despre_voi2.jpg" alt="Imagine 2">
+                <span class="overlay-text">That feelin’ when you arrive at your favorite cafe🫶🏼
+                    <br><br>📷 @miamituristico</span>
+            </div>
+        </a>
+
+        <a href="https://www.instagram.com/p/C6g-DUXC62B/">
+            <div class="image-container">
+                <img src="despre_voi3.jpg" alt="Imagine 3">
+                <span class="overlay-text">Our HRC X ORBR menu is @maxverstappen1 & @schecoperez APPROVED 🙌🏽
+                    <br><br>It’s race weekend and we are gearing up to go!
+                    <br><br>As the official viewing party partner for Oracle Red Bull Racing we’re showing this weekend’s races LIVE in our cafes!
+                    <br><br>Head down to your local Hard Rock Cafe for an adrenaline-fueled viewing experience!🏁</span>
+            </div>
+        </a>
+    </div>
+
+
+    <button id="scrollTopBtn">^</button>
+    <footer>
+        <div class="footer">
+          <p>CONNECT</p>
+          <a href="https://www.facebook.com/hardrock"><img src="facebook.jpg" alt="Facebook" style="width:30px" ></a>
+          <a href="https://twitter.com/hardrock"><img src="twiter.jpg" alt="Twiter" style="width:30px" ></a>
+          <a href="https://www.youtube.com/hardrock"><img src="youtube.jpg" alt="Youtube" style="width:30px" ></a>
+          <a href="https://www.instagram.com/hardrockcafe/"><img src="insta.jpg" alt="Instagram" style="width:30px" ></a>
+        </div>
+      </footer>
+
+      <script src="despre_voi.js"></script>
+</body>
+</html>

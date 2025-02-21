@@ -1,0 +1,229 @@
+body{
+    background-color: rgb(248, 240, 240);
+}
+/* STILIZARE MENIU */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu li {
+  float: right;
+}
+.menu li a {
+  font-size: large;
+  float: right;
+  display: inline;
+  color: rgb(247, 245, 245);
+  text-align: center;
+  padding: 20px 21px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #cf4242;
+}
+
+/* STILIZARE DROPDOWN MENIU */
+.dropdown {
+  position:absolute;
+  display: inline-block; 
+  z-index: 1; 
+}
+.dropbtn {
+  background-color: #333;
+  color: rgb(247, 244, 244);
+  padding: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+}
+.dropbtn:hover {
+  background-color: #cf4242;}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: rgb(247, 244, 244);
+}
+
+.dropdown-content a:hover {
+  background-color: #cf4242;
+  width: 100%; 
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  /* STILIZARE IMAGINE HEADER */
+  .imagine_header{
+    position:relative;
+    width: 100%;
+  }
+
+  #text_img_header{
+    position: absolute; 
+    top: 80%; 
+    left: 80%; 
+    transform: translate(-20%, -50%); /* Centrarea textului */
+    color: white; 
+    font-size: 50px; 
+    background-color: rgba(118, 21, 21, 0.5); /* Fundal semi-transparent pentru a face textul mai vizibil */
+    padding: 20px; /* Spațiere între text și fundal */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+  /* !!! aranjare in toata pagina*/
+  .container{
+    display:flex;
+  }
+
+  /* STILIZARE PARTEA STANGA */
+  #left_page{
+    text-align: left;
+    width:60%
+  }
+  
+  #left_page p,h1{
+    color: #cf4242;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #left_page h1{font-size: xx-large; text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+  #left_page b:hover{
+    color: #eb1e95;
+    font-size: large;
+  }
+
+  /* STILIZARE PARTEA DREAPTA */
+  .right{
+    float: right;
+    margin:100px;
+    width:100%;
+    cursor:pointer;
+  }
+
+  .box{
+    border: 2px solid #a01111; /* Stilizează chenarul cu o linie solidă de 2px, de culoare neagră */
+    padding: 15px; /* Adaugă un spațiu interior între text și chenar */
+    font-size: large;
+    margin-right: 100px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* STILIZARE FOOTER */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #000000;
+    margin-top: 20px;
+  }
+  .footer p{
+    color:rgb(228, 172, 29)
+  }
+
+  /* SITE RESPONSIVE */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .imagine_header img {
+      max-width: 100%;
+      height: auto; 
+    }
+  #text_img_header{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .menu a {
+    float: left; 
+    width: auto; 
+  }
+  .imagine_header img {
+      max-width: 100%;
+      height: auto; 
+    }
+  #text_img_header{
+    position: absolute; 
+    top: 80%; 
+    left: 80%; 
+    transform: translate(-20%, -50%); /* Centrarea textului */
+    color: white; 
+    font-size: 50px; 
+    background-color: rgba(118, 21, 21, 0.5); /* Fundal semi-transparent pentru a face textul mai vizibil */
+    padding: 20px; /* Spațiere între text și fundal */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu a {
+    float: none;
+    width: 100%;
+  }
+  .imagine_header img {
+      max-width: 100%;
+      height: auto; 
+  }
+  #text_img_header{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 90px;
+  }
+}
+
+/* STILIZARE JAVA SCRIPT */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup h2{
+  text-align: center;
+  color:rgba(118, 21, 21, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.popup p{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+

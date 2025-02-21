@@ -1,0 +1,18 @@
+{
+  "rezervari": [
+    {
+      "nume": "Maria Popescu",
+      "email": "maria.popescu@gmail.com",
+      "telefon": "0712345678",
+      "data": "08/08/2024",
+      "mesaj": "Rezervare pentru cină."
+    },
+    {
+      "nume": "Alexandru Ionescu",
+      "email": "alexandru.ionescu@gmail.com",
+      "telefon": "0798765432",
+      "data": "07/06/2024",
+      "mesaj": "Rezervare pentru prânz."
+    }
+  ]
+}

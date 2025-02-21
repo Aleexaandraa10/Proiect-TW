@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&hearts; Hard rock cafe</title>
+    <link href="acasa.css" rel="stylesheet" type="text/css">
+   
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h1>Hard rock cafe</h1>
+            <h2><b>Adevăratul punct de atracție al capitalei</b></h2>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="despre_voi.html">Despre voi</a></li>
+            <li><a href="care-i_faza.html">Care-i faza</a></li>
+            <li><a href="magazin.html">Magazin</a></li>
+            <li><a href="concerte.html">Concerte și Evenimente</a></li>
+            <li class="dropdown">
+              <div class="dropbtn">Meniu</div>
+              <div class="dropdown-content">
+                  <a href="burgeri.html">Burgeri</a>
+                  <a href="specialitati.html">Specialități</a>
+                  <a href="salate.html">Salate</a>
+                  <a href="deserturi.html">Deserturi</a>
+                  <a href="bauturi.html">Băuturi</a>
+              </div>
+            </li>
+            <li style="float: right"><a href="acasa.html">Acasă</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="row">
+      <section>
+        <div class="leftcolumn">
+          <div class="card">
+            <h2><b>HARD ROCK CAFE BUCURESTI</b></h2>
+            <img src="poza_intrare.jpg" alt="Poza" height="500" style="width:100%">
+            <p>Adevărat punct de atracție al capitalei, Hard Rock Cafe se află în topul preferințelor cu preparate delicioase, concerte live cu celebrități locale și internaționale, are o colecție unică de suveniruri din istoria muzicii și atmosferă specială. Hard Rock Cafe se află în Parcul Regele Mihai I (Herăstrău), pe malul lacului, în apropierea Arcului de Triumf și la doar câțiva pasi de Muzeul Satului.</p>
+          </div>
+          <div class="card">
+            <h2><b>GUSTUL CONTEAZĂ</b></h2>
+            <img src="mancare.jpg" alt="Mancare" style="width:100%">
+            <p>Celebrul nostru meniu oferă produse din bucătăria americană și internațională: platouri de aperitive, cei mai buni burgeri din carne proaspătă de vită Angus, coaste afumate de porc, salate, deserturi savuroase pregătite în casă, dar și preparate vegetariane sau de post. Pentru copiii sub 10 ani oferim un meniu special. Produsele gătite cu atenție și cocktailurile casei sunt atuurile cu care satisfacem cele mai exigente gusturi.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+          <div class="rightcolumn">
+              <div class="card">
+                <h2>PROGRAM</h2>
+                <img src="program.jpg" alt="Imagine Program" style="width:100%" height="300">
+              </div>
+              <div class="card">
+                <img src="award.jpg" alt="Imagine Sursa" width="400" height="400">
+              </div>
+              <div class="card">
+                <h2>LET'S TALK!</h2>
+                <h3>Contact</h3>
+                <div class="getinfo">
+                  <img src="telefon.jpg" alt="Iconita telefon" width="20" height="20">
+                  <p>+40 75 440 0900</p>
+                </div>
+                <div class="getinfo">
+                  <img src="email.jpg" alt="Iconita email" width="20" height="20">
+                  <p>sales@hardrockcafe.ro</p>
+                </div>
+                <h3>Cum ajungi la noi?</h3>
+                <div class="getinfo">
+                  <img src="masina.jpg" alt="Iconita masina" width="20" height="20">
+                  <p> Sos. Kiseleff nr. 32, sector 1, Bucharest 011343 RO</p>
+                </div>
+              </div>
+
+              <h2>Rezervă acum!</h2>
+              <form id="formular-rezervare" action="/rezervare_confirmata" method="post">
+                <label for="nume">Nume:</label>
+                  <input type="text" id="nume" name="nume" required>
+
+                <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <span class="error" id="error-email"></span>
+
+                <label for="telefon">Telefon:</label>
+                  <input type="tel" id="telefon" name="telefon" required>
+                  <span class="error" id="error-telefon"></span>
+
+                <label for="data">Data rezervării:</label>
+                  <input type="date" id="data" name="data" required>
+                  <span class="error" id="error-data"></span>
+
+                <label for="mesaj">Mesaj (opțional):</label>
+                  <textarea id="mesaj" name="mesaj" rows="4"></textarea>
+
+                 <input type="submit" value="Trimite Rezervarea">
+              </form>
+          </div>
+
+      </aside>
+    </div>
+
+    <div class="box">
+      <h1>Câteva dintre momentele <br>noastre preferate</h1>
+    </div>
+  
+    <div class="gallery">
+      <div class="slider">
+        <img src="g1.jpg" alt="G1">
+        <img src="g2.jpg" alt="G2">
+        <img src="g3.jpg" alt="G3">
+        <img src="g4.jpeg" alt="G4" >
+        <img src="g5.webp" alt="G5">
+        <img src="galerie8.jpg" alt="G6">
+        <img src="galerie7.webp" alt="G7">
+        <img src="galerie12.avif" alt="G8">
+        <img src="galerie11.jpg" alt="G9">
+        <img src="galerie15.webp" alt="G10">
+        <img src="galerie16.jpeg" alt="G11">
+        <img src="galerie17.jpg" alt="G12">
+        <img src="galerie19.jpg_large" alt="G13">
+      </div>
+
+      <div class="thumbnails">
+        <img src="g1.jpg" alt="G1">
+        <img src="g2.jpg" alt="G2">
+        <img src="g3.jpg" alt="G3">
+        <img src="g4.jpeg" alt="G4" >
+        <img src="g5.webp" alt="G5">
+        <img src="galerie8.jpg" alt="G6">
+        <img src="galerie7.webp" alt="G7">
+        <img src="galerie12.avif" alt="G8">
+        <img src="galerie11.jpg" alt="G9">
+        <img src="galerie15.webp" alt="G10">
+        <img src="galerie16.jpeg" alt="G11">
+        <img src="galerie17.jpg" alt="G12">
+        <img src="galerie19.jpg_large" alt="G13">
+      </div>
+    </div>
+
+
+
+    <a href="/pagina-inexistenta">Click aici pentru a vedea mai multe amintiri Hard Rock Cafe!</a>
+
+    <button id="scrollTopBtn">^</button>
+    <footer>
+      <div class="footer">
+        <p>CONNECT</p>
+        <a href="https://www.facebook.com/hardrock"><img src="facebook.jpg" alt="Facebook" style="width:30px" ></a>
+        <a href="https://twitter.com/hardrock"><img src="twiter.jpg" alt="Twiter" style="width:30px" ></a>
+        <a href="https://www.youtube.com/hardrock"><img src="youtube.jpg" alt="Youtube" style="width:30px" ></a>
+        <a href="https://www.instagram.com/hardrockcafe/"><img src="insta.jpg" alt="Instagram" style="width:30px" ></a>
+      </div>
+    </footer>
+
+
+    <script type="text/javascript" src="acasa.js"></script>
+</body>
+
+
+
+</html>

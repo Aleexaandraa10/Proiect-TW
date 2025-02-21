@@ -1,0 +1,314 @@
+body {
+    --rosu: #cf4242;
+    font-family: Arial;
+    background: #f2ebeb;
+    }
+/* STILIZARE MENIU */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .menu li {
+    float: right;
+  }
+  .menu li a {
+    font-size: large;
+    float: right;
+    display: inline;
+    color: rgb(247, 245, 245);
+    text-align: center;
+    padding: 20px 21px;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    background-color: var(--rosu);
+  }
+
+  /* STILIZARE DROPDOWN MENIU */
+  .dropdown {
+    position:absolute;
+    display: inline-block;  
+    z-index: 1; 
+  }
+  .dropbtn {
+    background-color: #333;
+    color: rgb(247, 244, 244);
+    padding: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+  }
+  .dropbtn:hover {
+    background-color: var(--rosu)}
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    text-align: center;
+    z-index: 2;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: rgb(247, 244, 244);
+}
+
+.dropdown-content a:hover {
+    background-color: var(--rosu);
+    width: 100%; 
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* STILIZARE FOOTER */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #000000;
+    margin-top: 20px;
+  }
+  .footer p{
+    color:rgb(228, 172, 29)
+  }
+
+  /* STILIZARE IMAGINE HEADER */
+  .imagine_header{
+    position:relative;
+    width: 100%;
+  }
+
+  #text_img_header{
+    position: absolute; 
+    top: 80%; 
+    left: 80%; 
+    transform: translate(-20%, -50%); /* Centrarea textului */
+    color: white; 
+    font-size: 50px; 
+    background-color: rgba(118, 21, 21, 0.5); /* Fundal semi-transparent pentru a face textul mai vizibil */
+    padding: 20px; /* Spațiere între text și fundal */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+  /* STILIZARE PREZENTARE */
+  #prezentare1 h1 {
+    transition: color 5s, font-size 3s, margin 2s; 
+    text-align: center;
+    padding:10px;
+  }
+  
+ #prezentare1 h1:hover {
+    color: rgb(47, 109, 18); 
+    font-size: 40px; 
+    margin-bottom: 20px;
+  }
+
+  /* ANIMATIE LA FII INDRAZNET SI COLORAT */
+  .prezentare2 h1 {
+    animation-name: slogan;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    color:var(--rosu);
+    text-align: center;
+    padding:10px;
+  }
+  
+ @keyframes slogan{
+    0%{color:rgb(15, 15, 207)}
+    25%{color:rgb(209, 46, 209)}
+    50%{color: rgb(225, 204, 45)}
+    100%{color:rgb(222, 119, 17)}
+ }
+
+ 
+ /* GRID HAINE */
+ .grid-container1{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    padding:5px;
+    
+}
+
+.grid-item{
+    border-bottom: 2px solid #333;
+    padding: 10px;
+    font-size:20px;
+    text-align: center;
+    display: inline-block; /* Face ca chenarul să se adapteze la dimensiunile imaginii */
+    border: 2px solid transparent; /* Inițial, chenarul este transparent */
+    transition: border-color 1s; /* Efect de tranziție pentru culoarea chenarului */
+}
+.grid-item:hover{
+    border-bottom-color: rgb(47, 109, 18); ; 
+}
+.grid-item-p{
+    font-size: 30px;
+    color:#000000;
+    text-align:center;
+    padding:15px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.grid-item1{
+    padding: 10px;
+    font-size:20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.grid-item2{
+    border-bottom: 2px solid #333;
+    padding: 10px;
+    font-size:20px;
+    text-align: center;
+    display: inline-block; 
+    border: 2px solid transparent; 
+    transition: border-color 1s; 
+}
+
+.grid-item2:hover:nth-child(4n){
+    border-bottom-color: rgb(37, 16, 231); ; 
+}
+.grid-item2:hover:nth-child(4n+1){
+    border-bottom-color: rgb(161, 220, 243); ; 
+}
+.grid-item2:hover:nth-child(4n+2){
+    border-bottom-color: rgb(239, 129, 245); ; 
+}
+.grid-item2:hover:nth-child(4n+3){
+    border-bottom-color: rgb(159, 132, 225); ; 
+}
+
+.grid-item3{
+    border-bottom: 2px solid #333;
+    padding: 10px;
+    font-size:20px;
+    text-align: center;
+    display: inline-block; 
+    border: 2px solid transparent; 
+    transition: border-color 1s; 
+}
+
+.grid-item3:hover:nth-child(2n){
+    border-bottom-color: rgb(30, 0, 255); ; 
+}
+.grid-item3:hover:nth-child(2n+1){
+    border-bottom-color: rgb(173, 153, 8); ; 
+}
+
+#prezentare3 h1 {
+    transition: color 5s, font-size 3s, margin 2s; 
+    text-align: center;
+    padding:10px;
+  }
+  
+ #prezentare3 h1:hover {
+    color: var(--rosu);
+    font-size: 30px; 
+    margin-bottom: 10px;
+  }
+
+.grid-item4{
+    border-bottom: 2px solid #333;
+    padding: 10px;
+    font-size:20px;
+    text-align: center;
+    display: inline-block; /* Face ca chenarul să se adapteze la dimensiunile imaginii */
+    border: 2px solid transparent; /* Inițial, chenarul este transparent */
+    transition: border-color 1s; /* Efect de tranziție pentru culoarea chenarului */
+}
+.grid-item4:hover{
+    border-bottom-color: var(--rosu); ; 
+}
+
+  /* STILIZARE BOX LA ETICHETEAZA-NE*/
+.box h1{
+    border: 2px solid #000; 
+    padding: 10px; 
+    width: 97%; 
+    background-image: url('marmura_neagra.jpg'); /* Adaugă imaginea de fundal */
+    background-size: cover; /* Asigură că imaginea de fundal acoperă întregul chenar */
+    background-position: center; /* Aliniază imaginea de fundal în centrul chenarului */
+    padding: 20px; 
+    color: white; 
+    text-align: center;
+}
+
+/* SITE RESPONSIVE */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .imagine_header img {
+      max-width: 100%;
+      height: auto; 
+  }
+  #text_img_header{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 80px;
+  }
+  .grid-container1{
+    grid-template-columns: repeat(2, 1fr); /* Schimbă la 2 elemente pe linie pentru ecranele mai mici */
+  }
+  .grid-item-p{
+    display: none;
+  }
+  .grid-item1{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .menu a {
+    float: left; 
+    width: auto; 
+  }
+  .imagine_header img {
+      max-width: 100%;
+    }
+  #text_img_header{
+    position: absolute; 
+    top: 80%; 
+    left: 80%; 
+    transform: translate(-20%, -50%); /* Centrarea textului */
+    color: white; 
+    font-size: 50px; 
+    background-color: rgba(118, 21, 21, 0.5); /* Fundal semi-transparent pentru a face textul mai vizibil */
+    padding: 20px; /* Spațiere între text și fundal */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu a {
+    float: none;
+    width: 100%;
+  }
+  .imagine_header img {
+      max-width: 100%;
+      height: auto; 
+    }
+  #text_img_header{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 90px;
+  }
+}

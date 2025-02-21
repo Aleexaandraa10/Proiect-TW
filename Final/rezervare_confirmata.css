@@ -1,0 +1,54 @@
+.box h1{
+    border: 2px solid #000; 
+    padding: 10px; 
+    width: 97%; 
+    background-image: url('marmura_neagra.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    padding: 20px; 
+    color: white; 
+    text-align: center;
+}
+
+.confirmation-message {
+    font-family: Arial, sans-serif; 
+    font-size: 30px; 
+    color: #333; 
+    text-align: center; 
+    margin-top: 20px; 
+    display: grid; /* folosim flexbox */
+    justify-content: center; /* aliniem orizontal elementele la centru */
+    align-items: center; /* aliniem vertical elementele la centru */
+    order:initial;
+    height: 70vh; /* setăm înălțimea la 100% din înălțimea vizibilă a ferestrei */
+  }
+
+
+.confirmation-message button {
+    background-color: #cf4242; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: larger;
+  }
+
+  .confirmation-message button a {
+    text-decoration: none; /* eliminăm sublinierea */
+    color: inherit; /* păstrăm culoarea textului la fel ca în conținutul original */
+  }
+
+.confirmation-message button:hover {
+    background-color: #5b0e0e; 
+  }
+
+  body{
+    color: rgb(238, 235, 235);
+  }
+
+
+  
